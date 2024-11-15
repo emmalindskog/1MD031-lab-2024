@@ -1,46 +1,51 @@
 <!DOCTYPE HTML>
 <html lang="en">
    <head>
+        <link rel="stylesheet" type="text/css" href="/public/css/style.css">
+
        <title>Emmas Hamburgare</title>
        <meta charset="utf-8"/>
    </head>
    <body>
         <header>
+            <img src="/img/bakgrund_header.jpg">
             <h1>Välkommen till Emmas Hamburgare!</h1>
         </header>
         <main>
-            <section>
+            <section id="meny">
                     <h2>Välj din hamburgare</h2>
                         <p>Välj den hamburgare som du vill beställa:</p>
-                        <div style="display: inline-block">
-                            <h3>Cheeseburgare</h3>
-                                <img src="/img/cheeseburgare.jpg" alt="Span" title="Cheeseburgare" style="width: 300px">
-                                <ul>
-                                    <li>Innehåller kött och mejeriprodukter</li>
-                                    <li>956 kcal</li>
-                                    <li>Pommes ingår</li>
-                                </ul>
-                        </div>
-                        <div style="display: inline-block">
-                            <h3>Kycklingburgare</h3>
-                                <img src="/img/chicken_burger_2.jpg" alt="Span" title="Kycklingburgare" style="width: 300px">
-                                <ul>
-                                    <li>Innehåller kyckling och mejeriprodukter</li>
-                                    <li>630 kcal</li>
-                                    <li>Pommes ingår</li>
-                                </ul>
-                        </div>
-                        <div style="display: inline-block">
-                            <h3>Halloumiburgare</h3>
-                                <img src="/img/halloumiburgare_2.jpeg" alt="Span" title="Halloumiburgare" style="width: 300px">
-                                <ul>
-                                    <li>Innehåller mejeriprodukter</li>
-                                    <li>672 kcal</li>
-                                    <li>Pommes ingår</li>
-                                </ul>
+                        <div class="wrapper">
+                            <div class="box">
+                                <h3>Cheeseburgare</h3>
+                                    <img src="/img/cheeseburgare.jpg" alt="Span" title="Cheeseburgare" style="width: 300px">
+                                    <ul>
+                                        <li>Innehåller <span class="ingrediens">nötkött</span></li>
+                                        <li>Innehåller <span class="ingrediens">mejeriprodukter</span></li>
+                                        <li>956 kcal</li>
+                                    </ul>
+                            </div>
+                            <div class="box">
+                                <h3>Kycklingburgare</h3>
+                                    <img src="/img/chicken_burger_2.jpg" alt="Span" title="Kycklingburgare" style="width: 300px">
+                                    <ul>
+                                        <li>Innehåller <span class="ingrediens">kyckling</span></li>
+                                        <li>Innehåller <span class="ingrediens">mejeriprodukter</span></li>
+                                        <li>630 kcal</li>
+                                    </ul>
+                            </div>
+                            <div class="box">
+                                <h3>Halloumiburgare</h3>
+                                    <img src="/img/halloumiburgare_2.jpeg" alt="Span" title="Halloumiburgare" style="width: 300px">
+                                    <ul>
+                                        <li>Innehåller <span class="ingrediens">mejeriprodukter</span></li>
+                                        <li>672 kcal</li>
+                                        <li>Pommes ingår</li>
+                                    </ul>
+                            </div>
                         </div>
             </section>
-            <section>
+            <section id="information">
                 <br />
                     <h2>Kundinformation</h2>
                         <p>Ange nödvändig information här.</p>
@@ -69,6 +74,7 @@
                                 <option>Swish</option>
                                 <option>Klarna</option>
                                 <option>PayPal</option>
+                                <option>Bitcoin</option>
                             </select>
                         </p>
                             <div>
