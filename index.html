@@ -1,117 +1,13 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html lang="en">
-   <head>
-        <link rel="stylesheet" type="text/css" href="/public/css/style.css">
-
-       <title>Emmas Hamburgare</title>
-       <meta charset="utf-8"/>
-   </head>
-   <body>
-        <header>
-            <img src="/img/bakgrund_header.jpg">
-            <h1>Välkommen till Emmas Hamburgare!</h1>
-        </header>
-        <main>
-            <section id="meny">
-                    <h2>Välj din hamburgare</h2>
-                        <p>Välj den hamburgare som du vill beställa:</p>
-                        <div class="wrapper">
-                            <div class="box">
-                                <h3>Cheeseburgare</h3>
-                                    <img src="/img/cheeseburgare.jpg" alt="Span" title="Cheeseburgare" style="width: 300px">
-                                    <ul>
-                                        <li>Innehåller <span class="ingrediens">nötkött</span></li>
-                                        <li>Innehåller <span class="ingrediens">mejeriprodukter</span></li>
-                                        <li>956 kcal</li>
-                                    </ul>
-                            </div>
-                            <div class="box">
-                                <h3>Kycklingburgare</h3>
-                                    <img src="/img/chicken_burger_2.jpg" alt="Span" title="Kycklingburgare" style="width: 300px">
-                                    <ul>
-                                        <li>Innehåller <span class="ingrediens">kyckling</span></li>
-                                        <li>Innehåller <span class="ingrediens">mejeriprodukter</span></li>
-                                        <li>630 kcal</li>
-                                    </ul>
-                            </div>
-                            <div class="box">
-                                <h3>Halloumiburgare</h3>
-                                    <img src="/img/halloumiburgare_2.jpeg" alt="Span" title="Halloumiburgare" style="width: 300px">
-                                    <ul>
-                                        <li>Innehåller <span class="ingrediens">mejeriprodukter</span></li>
-                                        <li>672 kcal</li>
-                                        <li>Pommes ingår</li>
-                                    </ul>
-                            </div>
-                        </div>
-            </section>
-            <section id="information">
-                <br />
-                    <h2>Kundinformation</h2>
-                        <p>Ange nödvändig information här.</p>
-                        <form>
-                        <h3>Leveransinformation:</h3>
-                            <p>
-                                <label for="namn">Fullständigt namn</label><br>
-                                <input type="text" id="namn" name="n" required="required" placeholder="För- och efternamn">
-                            </p>
-                            <p>
-                                <label for="email">Emailadress</label><br>
-                                <input type="email" id="email" name="em" required="required" placeholder="E-mail">
-                            </p>
-                            <p>
-                                <label for="Gata">Gata</label><br>
-                                <input type="text" id="gata" name="g" required="required" placeholder="Gatunamn">
-                            </p>
-                            <p>
-                                <label for="husnummer">Hus/lägenhetsnummer</label><br>
-                                <input type="number" id="husnummer" name="h" required="required" placeholder="Husnummer">
-                        </p>
-                        <p>
-                            <label for="betalning">Betalningsmetod: </label><br>
-                            <select id="betalning" name="bet">
-                                <option>Betalkort</option>
-                                <option>Swish</option>
-                                <option>Klarna</option>
-                                <option>PayPal</option>
-                                <option>Bitcoin</option>
-                            </select>
-                        </p>
-                            <div>
-                                <label for="radio">Ange kön: </label><br>
-                                    <input type="radio" name="val" value="Kvinna">
-                                    Kvinna
-                                </label>
-                            </div>
-                            <div>
-                                <label>
-                                    <input type="radio" name="val" value="Man">
-                                    Man
-                                </label>
-                            </div>        
-                            <div>
-                                <label>
-                                    <input type="radio" name="val" value="Icke-binär">
-                                    Icke-binär
-                                </label>
-                            </div>
-                            <div>
-                                <label>
-                                    <input type="radio" name="val" value="Vill inte ange" checked>
-                                    Vill inte ange
-                                </label>
-                            </div>
-                        </form>
-                        <br />
-                        <button type="submit">
-                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqqvxrsjyCLY9psJZjpWlRrPnz-hcar1L6QA&s" style="width: 35px">
-                            Beställ burgare!
-                        </button>
-            </section>
-        </main>
-            <hr>
-        <footer>
-            <p> &copy; 2024 Emma Grindefjord Lindskog</p>
-        </footer>
-   </body>
+  <head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vite App</title>
+  </head>
+  <body>
+    <div id="app"></div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
 </html>
